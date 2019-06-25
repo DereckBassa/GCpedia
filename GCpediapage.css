@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body {
+	background: #222;
+	font-family: "Poppins";
+}
+
+.container {
+	margin-left: 10vh;
+	margin-right: 10vh;
+}
+
+/*.logo {
+	float: left;
+	padding: 10px 0;
+}*/
+
+header	{
+	background-color: white;
+}
+
+header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.GCpedia {
+	color: black;
+	float: left;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	font-family: "Poppins";
+	text-decoration: none;
+
+	position: relative;
+}
+
+.GCpedia:hover {
+	color: blue;
+}
+
+.GCpedia::before {
+	content: "";
+	display: block;
+	height: 5px;
+	background: blue;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 200ms;
+}
+
+.GCpedia:hover::before {
+	width: 100%;
+}
+
+nav {
+	float: right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+
+	position: relative;
+}
+
+div a:hover {
+	color: paleturquoise;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Poppins";
+	border-right-width: 10px;
+}
+
+nav a:hover {
+	color: blue;
+}
+
+nav a::before {
+	content: "";
+	display: block;
+	height: 5px;
+	background: blue;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+.Banner {
+	background-image: url(mountains.jpg);
+	background-size: cover;
+	height: 64vh;
+	width: 100%;
+	background-position: absolute;
+}
+
+.color-overlay {
+	background-color: lavender;
+	position: absolute;
+	height: 64vh;
+	width: 100%;
+	opacity: 0.7;
+}
+
+p {
+	font-family: "Dosis";
+	font-size: 20px;
+}
+
+ul.list {
+	font-family: "Dosis";
+	font-size: 20px;
+}
+
+h1 {
+	color: black;
+	font-size: 8vh;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Poppins";
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25vh;
+}
+
+.section1 {
+	color: white;
+	background-color: #222;
+}
+
+.section2 {
+	color: black;
+	background-color: lavender;
+}
+
+.align-left {
+	padding: 10vh 0vh 10vh 10vh;
+	width: 50%;
+	text-align: justify;
+}
+
+.align-right {
+	padding: 10vh 10vh 10vh 0vh;
+	float: right;
+	width: 48%;
+	height: 15vh;
+}
+
+.align-left2 {
+	float: left;
+	padding: 10vh 0vh 0vh 10vh;
+	width: 45%;
+}
+
+.align-right2 {
+	padding: 10vh 10vh 10vh 0vh;
+	text-align: justify;
+}
+
+div img.handshake {
+	float: right;
+	padding: 0vh 10vh 0vh 0vh;
+	width: 100%;
+	position: relative;
+	top: 50%;
+	object-fit: contain;
+}
+
+div img.table {
+	width: 70vh;
+}
+
+section.Contact {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+section.Contact a:hover {
+	color: paleturquoise;
+}
+
+ul li.sub-list-item {
+	margin-left: 10vh;
+}
+
+.about {
+	padding-bottom: 50px;
+}
+
+.footer {
+	margin-left: 10vh;
+	margin-right: 10vh; 
+	color: white;
+	text-align: left;
+}
+
+nav a.footer-nav {
+	color: white;
+}
+
+p a {
+	color: blue;	
+}
+
+a.learn-more-button {
+  color: black;
+  background-color: #ff8b67;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  padding: 18px 26px 18px 26px;
+    /*Top, Right, Bottom, Left*/
+}
+
+.section3 {
+	background-color: #222;
+	text-align: center;
+	color: white;
+}
