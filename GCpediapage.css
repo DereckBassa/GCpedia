@@ -4,24 +4,68 @@
 	padding: 0px;
 }
 
-
 body {
-	background: #222;
 	font-family: "Poppins";
+	font-size: 16px;
 }
 
-.container {
-	margin-left: 10vh;
-	margin-right: 10vh;
+.nav-bar {
+	margin: 0vh 10vh 0vh 10vh
 }
 
-/*.logo {
-	float: left;
-	padding: 10px 0;
-}*/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Poppins';
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 header	{
-	background-color: white;
+	background-color: #222;
+	color: white;
 }
 
 header::after {
@@ -30,34 +74,25 @@ header::after {
 	clear: both;
 }
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
 .GCpedia {
-	color: black;
+	color: white;
 	float: left;
 	padding-top: 13px;
 	padding-bottom: 13px;
 	font-family: "Poppins";
 	text-decoration: none;
-
 	position: relative;
 }
 
 .GCpedia:hover {
-	color: blue;
+	color: skyblue;
 }
 
 .GCpedia::before {
 	content: "";
 	display: block;
 	height: 5px;
-	background: blue;
-
+	background: skyblue;
 	position: absolute;
 	top: 0;
 	width: 0%;
@@ -93,7 +128,7 @@ div a:hover {
 }
 
 nav a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "Poppins";
@@ -101,14 +136,18 @@ nav a {
 }
 
 nav a:hover {
-	color: blue;
+	color: skyblue;
+}
+
+h2 a:hover {
+	color: black;
 }
 
 nav a::before {
 	content: "";
 	display: block;
 	height: 5px;
-	background: blue;
+	background: skyblue;
 
 	position: absolute;
 	top: 0;
@@ -122,22 +161,113 @@ nav a:hover::before {
 }
 
 .Banner {
-	background-image: url(mountains.jpg);
-	background-size: cover;
-	height: 64vh;
-	width: 100%;
-	background-position: absolute;
+    /* The image used */
+    background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/0/03/ISM_Banner1.jpg");
+
+    /* Set a specific height */
+    height: 550px; 
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+.Banner2 {
+    /* The image used */
+    background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/6/62/DSB-SMO_Banner.jpg");
+
+    /* Set a specific height */
+    height: 550px; 
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+.Banner3 {
+    /* The image used */
+    background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/b/bb/Community_3.jpg");
+
+    /* Set a specific height */
+    height: 550px; 
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+.Banner4 {
+    /* The image used */
+    background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/0/05/Data_Centre.jpg");
+
+    /* Set a specific height */
+    height: 550px; 
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+.Banner5 {
+	/* The image used */
+    background-image: url("RPS-SMO_1.jpg");
+
+    /* Set a specific height */
+    height: 550px; 
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+div.color-overlay h1.title {
+	color: black;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Poppins";
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 218px;
+	padding-bottom: 218px;
 }
 
 .color-overlay {
 	background-color: lavender;
 	position: absolute;
-	height: 64vh;
+	height: 550px;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 p {
+	font-family: "Dosis";
+	font-size: 20px;
+}
+
+p a {
+	color: turquoise;
+	text-decoration: none;	
+}
+
+li a {
+	text-decoration: none;
+}
+
+div.center-text li {
 	font-family: "Dosis";
 	font-size: 20px;
 }
@@ -147,9 +277,25 @@ ul.list {
 	font-size: 20px;
 }
 
-h1 {
+div.center-text li a {
+	color: turquoise;
+}
+
+div.center-text li a:hover {
+	color: paleturquoise;
+}
+
+h1.ISMI {
+	padding: 70px 0px 0px 0px;
+	font-size: 36px;
+	max-width: 65%;
+	margin: 0 auto;
+	color: white;
+}
+
+h1.title {
 	color: black;
-	font-size: 8vh;
+	font-size: 64px;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: "Poppins";
@@ -158,7 +304,23 @@ h1 {
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 25vh;
+	padding-top: 218px;
+	padding-bottom: 218px;
+}
+
+h1.title-long {
+	color: black;
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Poppins";
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 180px;
+	padding-bottom: 180px;
 }
 
 .section1 {
@@ -173,39 +335,34 @@ h1 {
 
 .align-left {
 	padding: 10vh 0vh 10vh 10vh;
-	width: 50%;
+	width: 40%;
 	text-align: justify;
 }
 
 .align-right {
 	padding: 10vh 10vh 10vh 0vh;
 	float: right;
-	width: 48%;
-	height: 15vh;
-}
-
-.align-left2 {
-	float: left;
-	padding: 10vh 0vh 0vh 10vh;
-	width: 45%;
+	width: 50%;
 }
 
 .align-right2 {
 	padding: 10vh 10vh 10vh 0vh;
 	text-align: justify;
+	max-width: 70%;
+	display: block;
+	margin: 0 auto;
 }
 
-div img.handshake {
-	float: right;
-	padding: 0vh 10vh 0vh 0vh;
-	width: 100%;
-	position: relative;
-	top: 50%;
-	object-fit: contain;
+.center-text {
+	max-width: 65%;
+	text-align: justify;
+	margin: 0 auto;
+	display: block;
+	padding: 0px 0px 70px 0px;
 }
 
-div img.table {
-	width: 70vh;
+.center-text h2 {
+	text-align: left;
 }
 
 section.Contact {
@@ -226,33 +383,86 @@ ul li.sub-list-item {
 	padding-bottom: 50px;
 }
 
-.footer {
+section.footer {
 	margin-left: 10vh;
 	margin-right: 10vh; 
-	color: white;
-	text-align: left;
 }
 
 nav a.footer-nav {
 	color: white;
 }
 
-p a {
-	color: blue;	
+h2 {
+	font-size: 20px;
 }
 
-a.learn-more-button {
-  color: black;
-  background-color: #ff8b67;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Poppins";
-  padding: 18px 26px 18px 26px;
-    /*Top, Right, Bottom, Left*/
-}
-
-.section3 {
-	background-color: #222;
+a.button {
+  	color: black;
+  	background-color: yellowgreen;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	font-family: "Poppins";
+	padding: 18px 26px 18px 26px;
+	margin: 0 auto;
 	text-align: center;
+}
+
+.center {
+	background-color: lavender;
+	padding: 10vh 0vh 5vh 0vh;
+}
+
+.Contact {
+	width: 100%;
 	color: white;
+	padding: 60px 0px;
+	background-color: white;
+}
+
+div.Contact h2 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.center-text li {
+	margin-left: 50px;
+}
+
+div.center-text img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+/*-------footer------*/
+.ISM-logo {
+	width: 140px;
+	margin-left: 50px;
+}
+
+footer {
+	background-color: lavender;
+	color: black;
+	width: 100%;
+}
+
+div.wrapper p {
+	float: right;
+	font-size: 110%;
+	padding: 25px 0px;
+	display: block;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+nav.footer {
+	margin-left: 10vh;
+	margin-right: 10vh;
+}
+
+div.Contact {
+	color: #222;
+	text-align: center;
+	margin: 0 auto;
 }
